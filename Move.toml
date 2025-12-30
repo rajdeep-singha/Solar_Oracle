@@ -1,0 +1,16 @@
+[package]
+name = "solar_oracle"
+version = "1.0.0"
+authors = []
+
+[addresses]
+solar_oracle = "0x3894481b4dab10b691e954de7836b39fab6ea587861a613792aabd2f21008747"
+[dev-addresses]
+solar_oracle="0x3894481b4dab10b691e954de7836b39fab6ea587861a613792aabd2f21008747"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
