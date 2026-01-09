@@ -175,9 +175,8 @@ async function pushToChain(data: SolarData): Promise<string> {
   }
 }
 
-/**
- * Read solar data from blockchain
- */
+// Read solar data from blockchain
+ 
 async function readFromChain(lat: number, lon: number): Promise<void> {
   try {
     const latEncoded = encodeLatitude(lat);
@@ -197,9 +196,9 @@ async function readFromChain(lat: number, lon: number): Promise<void> {
   }
 }
 
-/**
- * Main oracle update cycle
- */
+
+ // Main oracle update cycle
+ 
 async function updateOracle(locations: Array<{ lat: number; lon: number }>) {
   console.log(`\n🚀 Starting Oracle Update Cycle`);
   console.log(`   Network: ${NETWORK}`);
@@ -229,9 +228,9 @@ async function updateOracle(locations: Array<{ lat: number; lon: number }>) {
   console.log(`\n✅ Oracle update cycle completed\n`);
 }
 
-/**
- * Initialize oracle (deploy module if needed)
- */
+
+ //Initialize oracle (deploy module if needed)
+ 
 async function initialize() {
   console.log(`\n🔧 Initializing Oracle Module...`);
   
